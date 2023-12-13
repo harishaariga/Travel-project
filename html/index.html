@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <script src="../js/blog.js"></script>
+    <title>Travel Blog</title>
+</head>
+<body class="container-fluid">
+    <div>
+    
+    <title>Go Trip</title>
+
+        <!--===========Nav Bar=================-->
+        <section class="nav-bar">
+            <div class="logo">Explore</div>
+            <ul class="menu">
+                <li class="active"><a href="#" >home</a></li>
+                <li><a href="#services">services</a></li>            
+                <li><a href="#about">about us</a></li>
+                <li><a href="#contact">contact us</a></li>
+                <li><a href="../html/loginpage.html">Login</a></li>
+            </ul>
+            </div>
+          
+
+        </section>
+        <!--===============Banner================-->
+        <section class="banner">
+            <div class="banner-text-item">
+                <div class="banner-heading">
+                    <h2 id="pg-title">
+                        <Span id="a">E</Span><Span id="a">X</Span><Span id="a">P</Span><Span id="a">L</Span><Span id="a">O</Span><Span id="a">R</Span><Span id="a">E</Span> <Span id="a">T</Span><Span id="a">H</Span><Span id="a">E</Span> <Span id="a">U</Span><Span id="a">N</Span><Span id="a">K</Span><Span id="a">N</Span><Span id="a">O</Span><span id="a">W</span>
+                    </h2>
+                </div>
+            
+                <form class="form input-group">
+                    <input type="text" list="mylist" id="city" placeholder="Where would you like to go?" required>
+                    <datalist id="mylist">
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Prades</option>
+                        <option>Assam</option>
+                        <option>Delhi</option>
+                        <option >Bihar</option>
+                        <option >Chhattisgarh</option>
+                        <option >Goa</option>
+                        <option >Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                    </datalist>
+                    <input type="date" class="date" id="date" required>
+                    <input type="text" placeholder="Enter No of Persons would you like to go?" id="Persons" required>
+                    <button onclick="calculation()" id="btnbook" class="btn btn-danger" style="height: 57px;" data-bs-target="#bookingdetails" data-bs-toggle="modal">book</button>
+
+                    
+                </form>     
+        </section >
+        <div >
+            <div class="modal fade" id="bookingdetails">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Booking Details</h2>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body" id="bdy">
+                           
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    
+        
+      
+
+        <!--=========Services===============-->
+        <section class="services">
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/tour-guide_onzla9.png">
+                <h2>8000+ Our Local Guides</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293738/reliability_jbpn4g.png">
+                <h2>100% Trusted Tour Agency</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293635/experience_a3fduk.png">
+                <h2>28+ Years of Travel Experience</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/feedback_s8z7d9.png">
+                <h2>98% Our Travelers are Happy</h2>
+            </div>
+        </section>
+        <!--==============Places===================-->
+        <section class="places">
+            <div class="places-text">
+                <small>FEATURED TOURS PACKAGES</small>
+                <h2>Favourite Places</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="card-img-top">
+                            <img src="../Asset/Gulmarg.jpg" class="card-img-top">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Winter Vacations</h2>
+                        <p class="cost">&#8377;5000/-  Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Gulmarg, Kashmir</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="card-img-top">
+                            <img src="../Asset/Shimla (1).jpg" class="card-img-top">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Winter Vacations</h2>
+                        <p class="cost">&#8377;5000/-  Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Shimla, Himachal Pradesh</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="card-img-top">
+                            <img src="../Asset/Binsar.jpg" class="card-img-top">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Winter Vacations</h2>
+                        <p class="cost">&#8377;5000/-  Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈Binsar, Uttarakhand</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="card-img-top">
+                            <img
+                                src="../Asset/Gangtok.jpg" class="card-img-top">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Winter Vacations</h2>
+                        <p class="cost">&#8377;5000/-  Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Gangtok, Sikkim</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="card-img-top">
+                            <img src="../Asset/lambasingi-in-andhra-pradesh.jpg" class="card-img-top">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Winter Vacations</h2>
+                        <p class="cost">&#8377;5000/-  Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Lambasingi,AndhraPradesh</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="card-img-top">
+                            <img
+                                src="../Asset/Tawang.jpg" class="card-img-top">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Winter Vacations</h2>
+                        <p class="cost">&#8377;5000/-  Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈  Tawang, Arunachal Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===========About Us===============-->
+        <section class="about">
+            <div class="about-img">
+                <img src="../Asset/franchisee.jpg">
+            </div>
+            <div class="about-text">
+                <small>ABOUT OUR COMPANY</small>
+                <h2>Harish Travels</h2>
+                <p>
+                    "Embark on a journey with our travel page, where wanderlust meets practical guidance.
+                     Discover awe-inspiring destinations, travel tips, and cultural insights.
+                      Let our vivid narratives and expert advice be your compass, guiding you to unforgettable experiences.
+                     Join us in exploring the world, one adventure at a time."</p>
+
+
+                <a href="#">ABOUT US</a>
+                
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-list text-center " >
+                <li ><span  class="bi bi-send-arrow-up-fill p-2"></span> harishaariga@gmail.com</li>
+                <li class="pt-2"> <span class="bi bi-phone-fill "></span> 8106172938</li>
+            </div>
+
+
+        <div class="contact-icons text-center p-2 icons">
+            <a href="#"><i class="bi bi-facebook p-3"></i></a>
+            <a href="#"><i class="bi bi-twitter p-3"></i></a>
+            <a href="#"><i class="bi bi-instagram p-3"></i></a>
+            <a href="#"><i class="bi bi-linkedin p-3"></i></a>
+        </div>
+        </section>
+
+        <!--===========Footer=================-->
+        <div class="footer">
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Offers & Discounts</li>
+                    <li>Get Coupon</li>
+                    <li>Contact Us</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>New Products</h3>
+                <ul>
+                    <li>Woman Cloth</li>
+                    <li>Fashion Accessories</li>
+                    <li>Man Accessories</li>
+                    <li>Rubber made Toys</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Support</h3>
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Report a Payment Issue</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="last-text">
+        <p class="text-center text-dark p-1">Developed with love by Harish Aariga @ 2023</p>
+    </div>
+
+   
+
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        
+</body>
+</html>
